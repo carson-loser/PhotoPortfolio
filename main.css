@@ -1,4 +1,4 @@
-:root {
+ :root {
   --white: #ddd;
   --black: #111;
   --lighterPink: #ffdab9;
@@ -25,6 +25,9 @@ img {
   display: block;
 }
 
+ul {
+  padding-left: 0;
+}
 ul li {
   list-style: none;
 }
@@ -40,7 +43,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* functionality classes */
 
-.flex {
+ .flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +74,7 @@ h1, h2, h3, h4, h5, h6, p {
 .btn:hover {
   background: var(--darkPink);
   color: var(--white);
+  border: 2px solid var(--darkPink);
 }
 
 .active {
@@ -84,7 +88,7 @@ h1, h2, h3, h4, h5, h6, p {
  .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) 
-  , url("images/couple-stock.jpg") center/cover no-repeat;
+  , url("images/couple-stock-4.JPG") center/cover no-repeat;
   color: #fff;
 }
 
@@ -93,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .brand-and-navBtn {
-  background: var(--darkest);
+  background: #f8bdb0; 
   position: relative;
   z-index: 999;
   height: 90px;
@@ -104,6 +108,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 24px;
   padding: 15px 25px;
   color: var(--white);
+  /* background-color: rgba(255, 255, 255, 0.5); 50% transparent white */
 }
 
 .brand-name {
@@ -119,11 +124,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .navBtn:hover {
-  background: #fff;
-  /* background: var(--pink); */
-  color: var(--darkPink);
+  background: var(--darkPink);
+  background: var(--pink); 
+  color: #fff;
   transition: var(--transition);
-  /* border: var(--pink); */
+  border: var(--pink);
 }
 
 .top-nav {
@@ -229,7 +234,264 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .social-icons ul a:hover {
-  background: var(--pink);
-  border-color: var(--pink);
+  background: var(--darkPink);
+  border-color: var(--darkPink);
 }  
 
+
+
+
+
+
+
+ /* :root {
+  --white: #ddd;
+  --black: #111;
+  --lighterPink: #ffdab9;
+  --lightPink: #fbc4ab;
+  --pink: #f8ad9d;
+  --darkPink: #f4978e;
+  --darkest: #f08080;
+  --transition: all 0.5s ease;
+}
+
+* {
+  font-family: 'Nunito', sans-serif; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 15px 0;
+}
+
+functionality classes
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.btn {
+  background: var(--darkest);
+  border: none;
+  text-align: center;
+  color: var(--darkest);
+  text-transform: uppercase;
+  background: transparent;
+  font-size: 15px;
+  padding: 12px;
+  border: 2px solid var(--darkPink);
+  border-radius: 25px;
+  margin: 15px 0;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--darkPink);
+  color: var(--white);
+  border: 2px solid var(--darkPink);
+}
+
+.active {
+  color: var(--lightPink)!important;
+}
+
+end of functionality
+
+header styling
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) 
+  , url("images/couple-stock.jpg") center/cover no-repeat;
+  color: #fff;
+}
+
+.top-nav a {
+  color: #fff;
+}
+
+.brand-and-navBtn {
+  position: relative;
+  z-index: 999;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 15px 25px;
+  color: var(--white);
+}
+
+.brand-name {
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.navBtn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--white);
+  cursor: pointer;
+}
+
+.navBtn:hover {
+  background: var(--darkPink)
+}
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav ul li {
+  padding: 10px;
+}
+
+.top-nav ul a {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+
+.top-nav ul a::after {
+  content: "";
+  height: 2px;
+  background: #ebd1d1;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0;
+  transition: var(--transition);
+}
+
+.top-nav ul a:hover::after {
+  width: 100px;
+}
+
+.search-icon {
+  display: none;
+}   
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -160px;
+}
+
+.about-content img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.about-img {
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  margin: 30px auto 0 auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 35px;
+  color: var(--darkPink);
+}
+
+.about-content h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 100;
+  background: rgba(255, 255, 255, 0.1);
+  width: 400px;
+  margin: 35px auto;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-icons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons ul a {
+  color: #fff;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+  margin: 10px;
+}
+
+.social-icons ul a:hover {
+  background: var(--darkPink);
+  border-color: var(--darkPink);
+}  */
