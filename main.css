@@ -441,6 +441,13 @@
 
  /* media queries */
 
+/* for 4 images on bottom */
+ @media screen and (min-width: 800px) {
+  .recent-imgs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+ }
+
  /* nav bar on desktop */
  @media screen and (min-width: 992px) {
    .nav-section {
@@ -560,6 +567,11 @@
    .footer .btn {
     font-size: 14px;
     padding: 8px 0;
+   }
+
+   .work-imgs {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
    }
  }
 
