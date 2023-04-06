@@ -1,11 +1,12 @@
  :root {
    --white: #ddd;
    --black: #111;
-   --lighterPink: #ffdab9;
-   --lightPink: #fbc4ab;
-   --pink: #f8ad9d;
-   --darkPink: #f4978e;
-   --darkest: #f08080;
+   --sand: #ede0d4;
+   --lightTan: #e6ccb2;
+   --tan: #ddb892;
+   --lightBrown: #b08968;
+   --brown: #7f5539;
+   --chocolate: #9c6644;
    --transition: all 0.5s ease;
  }
 
@@ -62,30 +63,30 @@
  }
 
  .btn {
-   background: var(--darkest);
+   background: var(--brown);
    border: none;
    display: block;
    width: 150px;
    text-align: center;
-   color: var(--darkest);
+   color: var(--brown);
    text-transform: uppercase;
    background: transparent;
    font-size: 15px;
    padding: 12px;
-   border: 2px solid var(--darkPink);
+   border: 2px solid var(--brown);
    border-radius: 25px;
    margin: 15px 0;
    transition: var(--transition);
  }
 
  .btn:hover {
-   background: var(--darkPink);
+   background: var(--brown);
    color: var(--white);
-   border: 2px solid var(--darkPink);
+   border: 2px solid var(--brown);
  }
 
  .active {
-   color: var(--lightPink) !important;
+   color: var(--lightBrown) !important;
  }
 
  /* end of functionality */
@@ -96,7 +97,8 @@
    min-height: 100vh;
    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/emma_profile.jpg") center/cover no-repeat;
    color: #fff;
-   background-position: center top -220px; /* Adjust the value of 100px to move the image down by desired amount */
+   background-position: center top -220px;
+   /* Adjust the value of 100px to move the image down by desired amount */
  }
 
  .top-nav a {
@@ -104,7 +106,7 @@
  }
 
  .brand-and-navBtn {
-   background: #f8bdb0;
+   background: var(--lightBrown);
    position: relative;
    z-index: 999;
    height: 90px;
@@ -131,15 +133,15 @@
  }
 
  .navBtn:hover {
-   background: var(--darkPink);
+   background: var(--brown);
    /* background: var(--pink);  */
    color: #fff;
    transition: var(--transition);
-   border: var(--pink);
+   border: var(--lightBrown);
  }
 
  .top-nav {
-   background: var(--darkPink);
+   background: var(--brown);
    transform: translateY(-600px);
    transition: var(--transition);
  }
@@ -201,12 +203,13 @@
  .about-content h2 {
    font-size: 48px;
    text-align: center;
+   /* width: 300px; */
    margin-top: 430px;
-   color: var(--darkPink);
+   color: var(--lightTan);
  }
 
  .about-content h3 {
-   color: #fff;
+   color: var(--lightTan);
    font-size: 30px;
    font-weight: 100;
    background: rgba(255, 255, 255, 0.1);
@@ -219,6 +222,9 @@
    width: 350px;
    margin: 30px auto 0 auto;
    padding-bottom: 30px;
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
  }
 
  .social-icons ul a {
@@ -239,11 +245,12 @@
    display: flex;
    justify-content: space-around;
    align-items: center;
+   width: 350px;
  }
 
  .social-icons ul a:hover {
-   background: var(--darkPink);
-   border-color: var(--darkPink);
+   background: var(--chocolate);
+   border-color: var(--chocolate);
  }
 
  /* end of header */
@@ -286,7 +293,7 @@
  }
 
  .sec-one-right h3 {
-   color: var(--lightPink);
+   color: var(--lightTan);
  }
 
  .sec-one-right>h3 {
@@ -328,37 +335,41 @@
    -moz-box-shadow: 0 0 8px #000
  }
 
- @media (max-width: 600px) {
-  .btn {
-    background: var(--darkest);
-    color: var(--white);
-    border: 2px solid var(--darkest);
-  }
-}
+ @media (max-width: 768px) {
+   .btn {
+     background: var(--brown);
+     color: var(--white);
+     border: 2px solid var(--brown);
+   }
+ }
 
-
-
- @media (max-width: 600px) {
+ @media (max-width: 830px) {
    .about-content h3 {
      width: auto;
      margin: 20 auto;
-     font-size: 21px;
+     font-size: 18px;
    }
  }
 
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 830px) {
    .about-content h2 {
-     font-size: 18px;
+     font-size: 22px;
      margin-top: 390px;
    }
  }
 
- @media screen and (max-width: 600px) {
-  .header {
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/emma_profile.jpg") center/cover no-repeat;
-    color: #fff;
+ @media screen and (max-width: 830px) {
+   .header {
+     min-height: 100vh;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/emma_profile.jpg") center/cover no-repeat;
+     color: #fff;
+   }
+ }
+
+ @media (max-width: 830px) {
+  .social-icons {
+    width: 100%; /* Adjust width to 100% for smaller screens */
+    margin: 0; /* Remove margin for smaller screens */
   }
 }
-
