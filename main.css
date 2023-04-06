@@ -151,9 +151,9 @@
    transform: translateY(0);
  }
 
- .search-icon {
+ /* .search-icon {
    display: none;
- }
+ } */
 
  .top-nav ul li {
    padding: 10px 0;
@@ -319,6 +319,7 @@
  .work-img-1 {
    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
      url(images/couple-stock-6.JPG) center/cover no-repeat;
+   /* height: 600px; */
    height: 400px;
    transition: var(--transition);
  }
@@ -326,15 +327,16 @@
  .work-img-2 {
    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
      url(images/couple-stock-4.JPG) center/cover no-repeat;
+   /* height: 600px; */
    height: 400px;
    transition: var(--transition);
  }
 
- /* .work-imgs div:hover {
+ .work-imgs div:hover {
    box-shadow: 0 0 8px #000;
    -webkit-box-shadow: 0 0 8px #000;
    -moz-box-shadow: 0 0 8px #000
- } */
+ }
 
 
  /* section 2 */
@@ -439,6 +441,7 @@
 
  /* media queries */
 
+ /* nav bar on desktop */
  @media screen and (min-width: 992px) {
    .nav-section {
      display: flex;
@@ -476,22 +479,89 @@
      margin-top: 0;
    }
 
-   /* .search-icon {
-    flex: 0 1 10%;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
-    transition: var(--transition)
-   } */
  }
 
+ /* section right 2 images, booking and descriptions */
+
+ @media screen and (min-width: 1000px) {
+   /* .section-one .container {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-column-gap: 50px;
+   }
+
+   .sec-one-left {
+     align-self: center;
+     height: 100%;
+   }
+
+   .work-content {
+     margin-top: 0;
+   } */
 
 
 
+   .footer-container {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 20px;
+   }
+ }
 
+ @media screen and (min-width: 1200px) {
+   footer-container>div {
+     width: 60%;
+     margin-left: auto;
+     margin-right: auto;
+   }
+ }
+
+ @media screen and (max-width: 500px) {
+   .header {
+     padding: bottom 30px;
+   }
+
+   /* .social-icons {
+    display: none;
+  } */
+   .about-content h3 {
+     width: 100%;
+   }
+
+   .subs {
+     width: 280px;
+   }
+
+   .subs i {
+     display: none;
+   }
+
+   .subs input {
+    width: 100%;
+   }
+
+   .subs button {
+    padding-left: 8px;
+    padding-right: 8px
+   }
+
+   .footer h2 {
+    font-size: 30px!important;
+   }
+
+   .footer h3 {
+    font-size: 20px!important;
+   }
+
+   .footer p {
+    font-size: 15px;
+   }
+
+   .footer .btn {
+    font-size: 14px;
+    padding: 8px 0;
+   }
+ }
 
 
 
