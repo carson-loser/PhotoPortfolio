@@ -268,22 +268,22 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .sec-one-left div h3 {
-  font-size: 24px;
+  font-size: 28px;
   opacity: 0.85;
 }
 
 .sec-one-left div p {
   font-weight: 300;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .sec-one-right h3 {
   color: var(--lightPink);
 }
 
-/* .sec-one-right h3 {
+.sec-one-right >h3 {
   text-align: center;
-} */
+}
 
 .sec-one-right p{
   opacity: 0.9;
@@ -299,3 +299,19 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-columns: repeat(2 1fr);
   grid-column-gap: 20px;
 }
+
+.work-img-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+  url(images/emma_profile.jpg) center/cover no-repeat;
+  height: 400px;
+  transition: var(--transition);
+}
+
+
+
+@media (max-width: 600px) {
+  .about-content h3 {
+  width: auto;
+  margin: 0 auto;
+  }
+  }
