@@ -109,6 +109,9 @@
 
  /* end of functionality */
 
+
+
+
  /* header styling */
 
  .header {
@@ -277,6 +280,11 @@
 
  /* end of header */
 
+
+
+
+
+
  /* MAIN BODY */
 
  /* section 1 */
@@ -424,7 +432,7 @@
  }
 
 
-/* about me page */
+/* about me and FAQ page */
 /* section 4 */
 .section-four {
   margin: 40px 0;
@@ -448,7 +456,7 @@
   font-weight: 300;
 }
 
-/* end of about me */
+/* end of about me and FAQ */
 
 
 
@@ -522,29 +530,21 @@
 
 
 
-/* booking page */
+/* sessions page */
 /* section 6 */
 .section-six {
   margin: 40px 0;
 }
 
-.shoot-wrapper-sm {
-  display: flex; /* Set the display property to flex */
-}
-
 
 .shoot {
   margin: 40px 0;
-  flex: 1; /* Set flex property to 1 to distribute equal space among all shoot divs */
-  display: flex; /* Set the display property to flex to align the content vertically */
-  flex-direction: column; /* Set the flex-direction property to column to stack the content vertically */
 }
 
 
 .shoot-content {
   padding: 25px;
-  background: #f7f7f7;
-  flex-grow: 1; /* Set the flex-grow property to 1 to make the text content take up all available space */
+  background: var(--sand);
 }
 
 .shoot span {
@@ -575,15 +575,6 @@
 .shoot-text {
   font-weight: 300;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -651,42 +642,39 @@
    text-align: center;
    font-size: 14px;
  }
-
  /* end of footer */
+
 
 
 
  /* media queries */
 
+ /* section 5 (contact page) */
 
- /* section 5 */
 @media screen and (min-width: 678px) {
   .contact-middle {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
   }
+  
 }
 
 
-
-
-
-
- /* for 4 images on bottom */
- /* section 2 */
+ /* for 4 images on bottom of main home page*/
+ /* section 2 (home page)*/
  @media screen and (min-width: 800px) {
    .recent-imgs {
      grid-template-columns: repeat(4, 1fr);
    }
 
-   /* section 3 */
+   /* section 3 (gallery page) */
    .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
    }
 
-   /* section 6 */
+   /* section 6 (sessions page) */
    .shoot-wrapper-sm {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -733,7 +721,7 @@
      margin-top: 0;
    }
 
-   /* section 5 */
+   /* section 5 (contact page)*/
 
    .contact-middle {
     grid-template-columns: repeat(4, 1fr);
@@ -747,7 +735,7 @@
 
  }
 
- /* section right 2 images, booking and descriptions */
+ /* section right 2 images, booking and descriptions (main landing page)*/
  @media screen and (min-width: 1000px) {
    .section-one .container {
      display: grid;
@@ -764,7 +752,7 @@
      margin-top: 0;
    }
 
-   /* section four */
+   /* section four (about and faq)*/
 
    /* .summary-wrapper-lg {
     display: grid;
@@ -772,7 +760,7 @@
     grid-gap: 20px;
    } */
 
-   /* section 6 */
+   /* section 6 (sessions)*/
    .shoot-wrapper-lg {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -801,7 +789,7 @@
  }
 
 @media screen and (min-width: 1400px) {
-  /* section six */
+  /* section 6 */
   .shoot-wrapper-sm {
     grid-template-columns: repeat(4, 1fr);
   }

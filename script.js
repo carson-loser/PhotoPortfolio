@@ -15,4 +15,4 @@ if (showBtn && topNav) {
 
 // lightbox 
 
-var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+var lightbox = new SimpleLightbox('.gallery a');
