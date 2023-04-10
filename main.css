@@ -497,6 +497,74 @@
 .contact-bottom .form {
   padding: 0 20px;
 }
+/* end of contact me page */
+
+
+
+/* booking page */
+/* section 6 */
+.section-six {
+  margin: 40px 0;
+}
+
+.shoot-wrapper-sm {
+  display: flex; /* Set the display property to flex */
+}
+
+
+.shoot {
+  margin: 40px 0;
+  flex: 1; /* Set flex property to 1 to distribute equal space among all shoot divs */
+  display: flex; /* Set the display property to flex to align the content vertically */
+  flex-direction: column; /* Set the flex-direction property to column to stack the content vertically */
+}
+
+
+.shoot-content {
+  padding: 25px;
+  background: #f7f7f7;
+  flex-grow: 1; /* Set the flex-grow property to 1 to make the text content take up all available space */
+}
+
+.shoot span {
+  display: block;
+}
+
+.badge {
+  background: var(--lightBrown);
+  width: 140px;
+  border-radius: 5px;
+  padding: 5px 0;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.misc-info {
+  font-size: 14px;
+  color: var(--chocolate);
+  margin-top: 16px;
+}
+
+.shoot-title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.shoot-text {
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
  /* footer styling */
@@ -597,7 +665,13 @@
     grid-template-columns: repeat(2, 1fr);
    }
 
-   /* section four */
+   /* section 6 */
+   .shoot-wrapper-sm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+   }
+
  }
 
  /* nav bar on desktop */
@@ -677,6 +751,13 @@
     grid-gap: 20px;
    } */
 
+   /* section 6 */
+   .shoot-wrapper-lg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+   }
+
 
    .footer-container {
      display: grid;
@@ -697,6 +778,13 @@
     grid-template-columns: repeat(5, 1fr);
    }
  }
+
+@media screen and (min-width: 1400px) {
+  /* section six */
+  .shoot-wrapper-sm {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 
  @media screen and (max-width: 500px) {
