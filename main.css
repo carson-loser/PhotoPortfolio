@@ -119,6 +119,9 @@
    /* Adjust the value of 100px to move the image down by desired amount */
  }
 
+ .bold {
+  font-weight: bold;
+ }
 
  .top-nav a {
    color: #fff;
