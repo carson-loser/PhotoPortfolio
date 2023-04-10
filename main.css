@@ -403,6 +403,101 @@
  }
 
 
+/* about me page */
+/* section 4 */
+.section-four {
+  margin: 40px 0;
+}
+
+.summary-post {
+  margin: 40px 0;
+}
+
+.summary-content {
+  padding: 25px;
+  background: #f7f7f7;
+}
+
+.summary-title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.summary-text {
+  font-weight: 300;
+}
+
+/* end of about me */
+
+
+
+/* contact page */
+/* section 5 */
+.section-five {
+  margin: 40px 0;
+}
+
+.section-five .container div {
+  margin: 20px 0;
+}
+
+.contact-top {
+  text-align: center;
+}
+
+.contact-top h3 {
+  font-size: 28px;
+}
+
+.contact-top p {
+  font-weight: 300;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contact-middle div {
+  text-align: center;
+  padding: 25px 0;
+  background: var(--lightBrown);
+  color: #fff;
+}
+
+.contact-middle div span {
+  display: block;
+}
+
+.contact-icon {
+  font-size: 30px;
+}
+
+.contact-middle div span:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact-middle div p {
+  font-weight: 300;
+  color: #ffffffb7;
+}
+
+.contact-bottom {
+  margin-top: 50px!important;
+} 
+
+.form input[type="text"], .form input[type="email"], .form textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid var(--lightBrown);
+  outline: none;
+  border-radius: 5px
+}
+
+.contact-bottom .form {
+  padding: 0 20px;
+}
+
 
  /* footer styling */
 
@@ -474,7 +569,23 @@
 
  /* media queries */
 
+
+ /* section 5 */
+@media screen and (min-width: 678px) {
+  .contact-middle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+  }
+}
+
+
+
+
+
+
  /* for 4 images on bottom */
+ /* section 2 */
  @media screen and (min-width: 800px) {
    .recent-imgs {
      grid-template-columns: repeat(4, 1fr);
@@ -485,6 +596,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
    }
+
+   /* section four */
  }
 
  /* nav bar on desktop */
@@ -525,11 +638,23 @@
      margin-top: 0;
    }
 
+   /* section 5 */
+
+   .contact-middle {
+    grid-template-columns: repeat(4, 1fr);
+   }
+
+   .contact-bottom {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 40px;
+   }
+
  }
 
  /* section right 2 images, booking and descriptions */
  @media screen and (min-width: 1000px) {
-   /* .section-one .container {
+   .section-one .container {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
      grid-column-gap: 50px;
@@ -542,8 +667,15 @@
 
    .work-content {
      margin-top: 0;
-   } */
+   }
 
+   /* section four */
+
+   /* .summary-wrapper-lg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+   } */
 
 
    .footer-container {
@@ -565,6 +697,7 @@
     grid-template-columns: repeat(5, 1fr);
    }
  }
+
 
  @media screen and (max-width: 500px) {
    .header {
