@@ -86,6 +86,23 @@
    border: 2px solid var(--brown);
  }
 
+ .btn-honeybook {
+  background: var(--brown);
+  border: none;
+  border-radius: 25px;
+  width: 100px;
+  padding: 10px;
+  margin: 3px 0;
+  font-size: 15px;
+  color: var(--sand);
+  transition: var(--transition);
+ }
+
+ .btn-honeybook:hover {
+  background: var(--brown);
+  color: #fff;
+ }
+
  .active {
    color: var(--lightBrown) !important;
  }
@@ -101,6 +118,7 @@
    background-position: center top -220px;
    /* Adjust the value of 100px to move the image down by desired amount */
  }
+
 
  .top-nav a {
    color: #fff;
